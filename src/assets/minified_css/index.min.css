@@ -1,0 +1,265 @@
+header {
+  /*background: linear-gradient(to right, #3E7D3E 0, #227AFF 100%);*/
+  /*background: -moz-linear-gradient(to right, #3E7D3E 0, #227AFF 100%);*/
+  /*background: -webkit-gradient(to right, #3E7D3E 0, #227AFF 100%);*/
+  /*background: -ms-linear-gradient(to right, #3E7D3E 0, #227AFF 100%);*/
+  /*background: -o-linear-gradient(to right, #3E7D3E 0, #227AFF 100%)*/
+
+  background: linear-gradient(to right, #4d595d 0, #31708f 100%);
+  background: -moz-linear-gradient(to right, #3E7D3E 0, #227AFF 100%);
+  background: -webkit-gradient(to right, #3E7D3E 0, #227AFF 100%);
+  background: -ms-linear-gradient(to right, #3E7D3E 0, #227AFF 100%);
+  background: -o-linear-gradient(to right, #3E7D3E 0, #227AFF 100%)
+}
+
+header .nav-head a {
+  font-size: 2.2rem;
+  color: #fff
+}
+
+header .main-nav li a {
+  font-size: 1.5rem;
+  padding: 0 40px;
+  color: #fff
+}
+
+header .main-nav li a:hover {
+  color: #FFD633
+}
+
+header .login-register .dd .glyphicon-menu-down, header .otherLink .dd .glyphicon-menu-down {
+  color: #fff;
+  transition: all .1s 0s linear;
+  font-size: .9rem
+}
+
+header .login-register, header .login-register > a, header .otherLink .dd {
+  color: #fff;
+  transition: all .1s 0s linear
+}
+
+header .login-register a:hover {
+  color: #1E9FFF;
+  transition: all .1s 0s linear
+}
+
+main.container-fluid {
+  background-color: #fafafa;
+  padding: 60px 0 0
+}
+
+main .jumbotron {
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+main .jumbotron .bg {
+  background-size: cover;
+  filter: blur(0);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #4cd964 0, #5ac8fa 100%);
+  background: -moz-linear-gradient(to right, #4cd964 0, #5ac8fa 100%);
+  background: -webkit-gradient(to right, #4cd964 0, #5ac8fa 100%);
+  background: -ms-linear-gradient(to right, #4cd964 0, #5ac8fa 100%);
+  background: -o-linear-gradient(to right, #4cd964 0, #5ac8fa 100%)
+}
+
+main .jumbotron p {
+  margin: 10px 0
+}
+
+main .jumbotron p .btn {
+  transition: all .2s ease-in-out;
+  background-color: transparent;
+  border: 1px solid #e0ffff
+}
+
+main .jumbotron p .btn:hover {
+  opacity: .6
+}
+
+main .jumbotron h2 {
+  font-size: 3.5rem
+}
+
+main .article-header {
+  line-height: 30px
+}
+
+main .article-header p.more:hover a {
+  color: #5FB878;
+  cursor: pointer;
+  font-weight: 500
+}
+
+main .article-content .col-md-6 {
+  margin-bottom: 10px
+}
+
+main .article-content .col-md-6 > div {
+  background-color: #fff;
+  height: 120px;
+  padding: 0 15px 15px;
+  overflow: hidden;
+  transition: all .2s 0s ease;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  position: relative
+}
+
+main .article-content .col-md-6 > div:hover {
+  box-shadow: 0 3px 10px 2px #b0b0b0
+}
+
+main .article-content .col-md-6 > div p {
+  margin: 0
+}
+
+main .article-content .col-md-6 > div p.article-title {
+  margin-top: 15px;
+  height: 20px;
+  transition: all .3s 0s ease;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #444
+}
+
+main .article-content .col-md-6 > div p.article-title a {
+  color: inherit;
+  font-size: 16px
+}
+
+main .article-content .col-md-6 > div p.article-title:hover a {
+  color: #5FB878
+}
+
+main .article-content .col-md-6 > div p.article-content {
+  line-height: 25px;
+  height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  bottom: -10px;
+  transition: all .3s;
+  width: 100%;
+  padding-right: 10px;
+  position: relative;
+  opacity: 0
+}
+
+main .article-content .col-md-6:hover > div p.article-content {
+  opacity: 1
+}
+
+main .article-content .col-md-6 > div p.article-review {
+  line-height: 60px;
+  color: #b0b0b0;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  transition: all .3s
+}
+
+main .article-content .col-md-6 > div p.article-review > span {
+  padding: 0 8px;
+  list-style-position: inside;
+  display: list-item;
+  list-style-type: disc;
+  float: left
+}
+
+main .article-content .col-md-6 > div p.article-review > span:nth-child(1) {
+  display: inline !important;
+  padding-left: 2px
+}
+
+main .video-header {
+  margin-top: 10px
+}
+
+main .video-header p.more:hover a {
+  color: #5FB878;
+  cursor: pointer;
+  font-weight: 500
+}
+
+main .video-content {
+  margin-bottom: 20px
+}
+
+main .video-content div.col-md-3 {
+  padding: 10px
+}
+
+main .video-content div.col-md-3 > div {
+  height: 250px;
+  transition: all .3s 0s ease;
+  padding-bottom: 5px
+}
+
+main .video-content div.col-md-3 > div:hover {
+  box-shadow: 2px 4px 20px 0 #b0b0b0
+}
+
+main .video-content div.col-md-3 a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 78%
+}
+
+main .video-content div.col-md-3 a p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin: 0
+}
+
+main .video-content div.col-md-3 a p.play {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+main .video-content div.col-md-3 a p.poster img {
+  width: 100%;
+  height: 100%;
+  transition: all .5s
+}
+
+main .video-content div.col-md-3 a p.play img {
+  transform: scale(1.3);
+  opacity: 0;
+  transition: all .5s
+}
+
+main .video-content div.col-md-3:hover a p.poster img {
+  transform: scale(1.2)
+}
+
+main .video-content div.col-md-3:hover a p.play img {
+  opacity: 1
+}
+
+main .video-content div.col-md-3 > div > p {
+  margin: 7px 0;
+  padding: 0 10px
+}
+
+main .video-content div.col-md-3 p .money {
+  color: #5FB878
+}

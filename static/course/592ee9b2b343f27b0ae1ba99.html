@@ -1,0 +1,1853 @@
+
+<!doctype html>
+<html>
+<head>
+  <link rel="canonical" href="http://xc.hubwiz.com/course/592ee9b2b343f27b0ae1ba99"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no">
+  
+  <title>Vue.js2入门与提高_vue.js教程_汇智网</title>
+  <meta name="keywords" content="Vue.js,vue.js教程,vue,vuejs,vue resource,vue computed,vue props,vue ajax,vuex">
+  <meta name="description" content="Vue.js入门与提高系统讲解vue.js 2.x,兼顾理论机制和实战场景,内容有模版渲染,逻辑控制,声明与绑定,计算属性,过滤器,响应式计算,事件监听,表单输入,指令开发,槽,组件开发,动态效果等。">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/dist/course.min.css">
+  
+</head>
+<body>
+  
+<header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://www.hubwiz.com/" class="navbar-brand">
+                <img src="/images/logo.png" alt="汇智网欢迎你！">
+            </a>
+        </div>
+        <nav id="hb-nav" class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a href="http://www.hubwiz.com/course/">课程中心</a></li>
+                
+                <li><a href="http://premium.hubwiz.com/">会员服务</a></li>
+                <li><a href="http://blog.hubwiz.com/">官方博客</a></li>
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right profile">
+                
+                <li><a href="http://www.hubwiz.com/login"><i class="fa fa-sign-in"></i> 登录 </a></li>
+                <li><a href="http://www.hubwiz.com/register"><i class="fa fa-pencil"></i> 注册</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+  <div id="app">
+    <div class="summary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 cover">
+            
+            <img src="/class/592ee9b2b343f27b0ae1ba99/thumb.png" alt="Vue.js 2 入门与提高">
+          </div>
+          <div class="col-md-6 main">
+            <form method="POST" action="http://premium.hubwiz.com/order/_bundle?pickup=http://xc.hubwiz.com/course/592ee9b2b343f27b0ae1ba99">
+              <h1>Vue.js 2 入门与提高</h1>
+              <p class="author">汇智网 / hubwiz.com / 2017-6-1</p>
+              <p class="brief" onclick="location.href='/class/592ee9b2b343f27b0ae1ba99/'">本课程全面系统地讲解最新的前端框架Vue.js 2.x，内容涵盖响应式计算机制、指令和组件、动画效果等诸多方面，教程深入浅出，即适合没有Vue.js开发基础的前端初学者学习，也适合具备一定基础的工程师深入学习提高。</p>
+              <input type="hidden" name="service" value="3003000017">
+              <div class="price clearfix">
+                
+                <s class="old">￥399.00</s>
+                
+                <span class="now">￥199.00</span>
+                
+            <ul>
+              <li><i class="glyphicon glyphicon-time"></i > 三个月服务期</li>
+              <li><i class="glyphicon glyphicon-ok"></i> 全新在线编程环境</li>
+              <li><i class="glyphicon glyphicon-user"></i> 一对一在线助教答疑</li>
+              
+              <li><i class="glyphicon glyphicon-yen"></i> 升级<a href="http://premium.hubwiz.com/" target="_blank" style="color:#ffeb3b">包年会员</a>，立享五折优惠</li>
+              
+              <!--li>离线PDF下载</li-->
+            </ul>
+                
+              </div>
+              
+              
+              <div class="bundle" style="display:block">
+                <label>服务选项</label>
+                <select name="bundle[]">     
+                   
+                  <option value="">免费服务：在线答疑，非实时响应</option>
+                   
+                  <option value="6003000004">收费服务：在线辅导4小时优惠包，￥1000.00</option>
+                  
+                </select>
+                <span class="plus"></span>
+              </div>
+              
+              
+              <div class="action-bar">
+                <div class="btn-group" role="group">
+                    <button disabled style="cursor: auto;" type="button" class="btn btn-default btn-sm">
+                        <i class="glyphicon glyphicon-user"></i> 学习
+                    </button>
+                    <span class="input-group-addon">1031</span>
+                </div>
+                <div class="btn-group recommend" cid="592ee9b2b343f27b0ae1ba99">
+                    <button title="课程不错，鼓励一下！" type="button"
+                            class="btn btn-success btn-sm ">
+                        <i class="glyphicon glyphicon-thumbs-up"></i> 推荐                        
+                    </button>
+                    <span class="input-group-addon">14</span>
+                </div>
+                 
+                <div class="btn-group pull-right">
+                  <button class="btn btn-danger buy" type="submit">
+                    <i class="glyphicon glyphicon-shopping-cart"></i> 立即购买
+                  </button>
+                </div>
+                <div class="btn-group pull-right" style="display:block;margin-right:10px;">
+                  <a class="btn btn-success" href="/class/592ee9b2b343f27b0ae1ba99/">
+                    <i class="glyphicon glyphicon-play"></i> 免费试学
+                  </a>
+                </div>
+                
+              </div>
+              
+              <!--div class="btn-group btn-group-justified" style="display:none">
+                <div class="btn-group">
+                  <a class="btn btn-primary" href="/class/592ee9b2b343f27b0ae1ba99/">开始学习</a>
+                </div>
+              </div-->
+            </form>
+          </div>
+          <div class="col-md-3 feature">
+            <img src="/images/pair3.fw.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="syllabus">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <div id="index">
+              <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#bookindex" data-toggle="tab">课程目录</a></li>
+                <li class=""><a href="#comment" data-toggle="tab">课程评论</a></li>
+              </ul>
+              <div class="index_content tab-content">
+                <div id="bookindex" class="tab-pane active">
+                  <div class="list-group">
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="1" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       初识Vue.js 2
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/1" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       渐进式前端框架
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/2" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       Hello Vue.js 2
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/3" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       使用隐式渲染
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/4" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       使用HTML模板
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/5" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       模型声明与绑定
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/6" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       模板的数据上下文
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/7" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       响应式计算机制
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/8" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       交互行为声明
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/9" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       实例方法声明
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="/class/592ee9b2b343f27b0ae1ba99/#1/10" level="1" gid="1" lock="false">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       生命周期钩子
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="2" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       模型变换 —— 计算属性与过滤器
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="2" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       计算属性
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="2" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       计算属性 vs. 实例方法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="2" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       可写计算属性
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="2" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       过滤器
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="2" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       过滤器参数
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="2" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       过滤器级联
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="3" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       响应式计算 —— 数据驱动视图
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       数据驱动：从拼接到响应式计算
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       监听数据变化
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       变化检测原理与实现 —— 拦截写操作
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       数据依赖性推理
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       依赖推理原理与实现 —— 拦截读操作
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       监听数组变化
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       动态管理模型数据 —— 非根属性
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       动态管理模型数据 —— 根属性
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       渲染引擎 —— 模板编译与VDOM渲染器
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       渲染引擎 —— DOM更新器
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="3" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       Vue实例的启动引导
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="4" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       模板语法 —— 数据绑定
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="4" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       文本绑定语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="4" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       插值表达式隐身
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="4" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       属性绑定语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="4" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       DOM属性绑定
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="4" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       样式绑定语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="4" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       样式类绑定语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="4" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       影响绑定的特殊指令
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="5" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       模板语法 —— 逻辑控制
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="5" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       条件渲染语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="5" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       互斥渲染语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="5" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       多分支切换渲染语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="5" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       条件显示语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="5" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       循环迭代语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="5" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       对象迭代语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="5" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       整数迭代语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="6" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       模板语法 —— 事件监听
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="6" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       事件监听语法
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="6" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       监听指令值的编译处理
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="6" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       DOM事件修饰符
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="6" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       键盘事件修饰符
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="7" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       模板语法 —— 表单输入
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="7" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       双向绑定指令
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="7" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       指令修饰符
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="7" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       绑定多行文本输入
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="7" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       绑定复选框输入
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="7" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       绑定单选框输入
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="7" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       绑定选择列表输入
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="8" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       指令开发 —— 应用场景与使用方法
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="8" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       简介
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="8" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       创建自定义指令
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="8" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       指令配置对象
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="8" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       钩子函数参数
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="8" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       案例：马克笔指令
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="8" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       案例：瀑布流布局指令
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="9" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       组件开发 —— 状态、属性与事件
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       组件化概述
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       创建自定义组件
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       组件类的简化表示
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       组件的状态
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       组件的属性
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       属性默认值
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       属性值验证器
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       自定义验证器
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       组件的事件
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       让组件支持v-model指令
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="9" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       让组件支持.sync修饰符
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="10" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       组件开发 —— 槽的应用场景与使用方法
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="10" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       概述
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="10" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       槽内容的上下文
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="10" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       槽内容的分发
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="10" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       带作用域的槽
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="11" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       组件开发 —— 实践与提高
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="11" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       组件命名约定
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="11" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       动态加载组件
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="11" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       访问其他组件/元素
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="11" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       案例：标签卡组件
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="11" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       使用渲染函数
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="11" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       案例：评级组件
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="11" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       创建异步组件
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="#" level="0" gid="12" lock="">
+                      
+                      
+                      <span class="glyphicon glyphicon-book"></span>
+                      
+                      <span class="icon"></span>
+                       动态效果 —— 场景、机制与组件
+                      
+                      <i class="glyphicon glyphicon-menu-right pull-right navi-indicator"></i>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       CCS过渡和动画
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       模型驱动的动画
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       使用transition组件
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       使用CSS动画机制
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       集成第三方CSS动画库
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       过渡的钩子函数
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       使用JS动画机制
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       集成第三方JS动画库
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       多个元素/组件切换的过渡
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       列表成员的过渡效果
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       过渡期间的位移效果
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                                          
+                      <a class="list-group-item" href="javascript:void(0)" level="1" gid="12" lock="true">
+                      
+                      <span class="indent"></span>
+                      
+                      
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      
+                      <span class="icon"></span>
+                       列表过渡的钩子函数
+                      
+                      <span class="glyphicon glyphicon-lock pull-right navi-lock"></span>
+                      
+                    </a>  
+                    
+                  </div>
+                </div>
+
+                <div id="comment" course-id="592ee9b2b343f27b0ae1ba99" class="tab-pane">
+                  <form id="comment_editor" class="clearfix" method="POST" action="/sku/592ee9b2b343f27b0ae1ba99/_comment">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="5" placeholder="你对课程有什么看法？" id="comment_text" name="comment_text"></textarea>
+                    </div>
+                    
+                    <a class="btn btn-primary pull-right" href="http://www.hubwiz.com/login">登录后发表评论</a>
+                    
+                  </form>
+                  <div id="comment_list">
+                    <h4>最新评论</h4>
+                    <hr>
+                    
+                    <div class="media-list">
+                      
+                      <div class="media">
+                        <div class="media-left">
+                          
+                          <img src="http://thirdqq.qlogo.cn/qqapp/101161717/81B486DE712DA76C0A49B22A09039E04/100">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <a href="http://www.hubwiz.com/personal/5b6033550c4a29480726353c">花啦啦 </a>
+                            
+                            <i class="time">2018/8/1 9:50</i>
+                          </h4>
+                          <p>这么贵意思就是不想赚钱。你又不是不知道，这些知识不是只有你有的。</p>
+                        </div>
+                      </div>
+                      
+                      <div class="media">
+                        <div class="media-left">
+                          
+                          <img src="http://thirdqq.qlogo.cn/qqapp/101161717/9389125AD50E1DC1BFC78C6526403AA9/100">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <a href="http://www.hubwiz.com/personal/5af10a430c4a294807262e32">黄文博 </a>
+                            
+                            <i class="time">2018/5/8 10:27</i>
+                          </h4>
+                          <p>一个199 全家桶下来得多少钱？666</p>
+                        </div>
+                      </div>
+                      
+                      <div class="media">
+                        <div class="media-left">
+                          
+                          <img src="http://www.hubwiz.com/avatar/5aab80b45caf444b5a9e9bc4.jpg">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <a href="http://www.hubwiz.com/personal/5aab80b45caf444b5a9e9bc4">无人是我 我也乐于宁静 </a>
+                            
+                            <i class="time">2018/3/16 17:49</i>
+                          </h4>
+                          <p>@ciga 这个教程没有视频吗</p>
+                        </div>
+                      </div>
+                      
+                      <div class="media">
+                        <div class="media-left">
+                          
+                          <img src="http://thirdqq.qlogo.cn/qqapp/101161717/EEE8239024AF210BC09C58499F252754/100">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <a href="http://www.hubwiz.com/personal/5aab2e320c4a294807262795">无人识我 我也乐于宁静 </a>
+                            
+                            <i class="time">2018/3/16 14:30</i>
+                          </h4>
+                          <p>课程是视频还是免费可以看得那种</p>
+                        </div>
+                      </div>
+                      
+                      <div class="media">
+                        <div class="media-left">
+                          
+                          <img src="http://www.hubwiz.com/avatar/5451742d77f325772e1ba7fa.jpg">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <a href="http://www.hubwiz.com/personal/5451742d77f325772e1ba7fa">ciga </a>
+                            
+                            <i class="time">2017/12/18 23:44</i>
+                          </h4>
+                          <p>@g1mi：通常每天都会上线</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="more">
+                      <button class="btn btn-default" title="查看更多"><i class="glyphicon glyphicon-triangle-bottom"></i></button>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12" id="recommends">
+            <div class="panel panel-default" style="display:none">
+              <div class="panel-body">
+                <a href="http://i.hubwiz.com/income" target="_blank" class="btn btn-default btn-block">
+                  <i class="fa fa-yen"></i> 查看我的推广收入
+                </a>
+              </div>
+            </div>
+            
+            <div class="panel panel-default" style="display:block">
+              <div class="panel-heading">学习交流群</div>
+              <div class="panel-body">
+                <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=4011a50b8071c13a30b3f82ed9539b53514da8e7f2d53758d3ab21bcb7a9ff49">
+                  <img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="QQ交流群" title="QQ交流群" style="margin-left:40px">
+                </a>
+                <img src="/images/marketing/wxg-vue.png" style="max-width:100%">
+              </div>
+            </div>
+            
+          
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">系统推荐</h3>
+              </div>
+              <div class="panel-body">
+                <div class="media-list">
+                
+                  <div href="http://www.hubwiz.com/course/56f9ee765fd193d76fcc6c17" class="media">
+                    <div class="media-left">
+                      <a href="http://www.hubwiz.com/course/56f9ee765fd193d76fcc6c17" target="_blank"><img src="http://logo.img.hubwiz.com/logo!56f9ee765fd193d76fcc6c17.png" alt="Linux网络编程入门"></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="http://www.hubwiz.com/course/56f9ee765fd193d76fcc6c17" target="_blank">Linux网络编程入门</a></h4>
+                    </div>
+                  </div>
+                
+                  <div href="http://www.hubwiz.com/course/561e0c8a1bc20c980538e1e8" class="media">
+                    <div class="media-left">
+                      <a href="http://www.hubwiz.com/course/561e0c8a1bc20c980538e1e8" target="_blank"><img src="http://logo.img.hubwiz.com/logo!561e0c8a1bc20c980538e1e8.png" alt="Node.js 4.0"></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="http://www.hubwiz.com/course/561e0c8a1bc20c980538e1e8" target="_blank">Node.js 4.0</a></h4>
+                    </div>
+                  </div>
+                
+                  <div href="http://www.hubwiz.com/course/54ee8d2de564e519b8f8dad3" class="media">
+                    <div class="media-left">
+                      <a href="http://www.hubwiz.com/course/54ee8d2de564e519b8f8dad3" target="_blank"><img src="http://logo.img.hubwiz.com/logo!54ee8d2de564e519b8f8dad3.png" alt="Javascript入门基础"></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="http://www.hubwiz.com/course/54ee8d2de564e519b8f8dad3" target="_blank">Javascript入门基础</a></h4>
+                    </div>
+                  </div>
+                
+                  <div href="http://www.hubwiz.com/course/54eeb95cf863871d446b24a0" class="media">
+                    <div class="media-left">
+                      <a href="http://www.hubwiz.com/course/54eeb95cf863871d446b24a0" target="_blank"><img src="http://logo.img.hubwiz.com/logo!54eeb95cf863871d446b24a0.png" alt="HTML5"></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="http://www.hubwiz.com/course/54eeb95cf863871d446b24a0" target="_blank">HTML5</a></h4>
+                    </div>
+                  </div>
+                
+                  <div href="http://www.hubwiz.com/course/5692ffcaacf9a45a69b04feb" class="media">
+                    <div class="media-left">
+                      <a href="http://www.hubwiz.com/course/5692ffcaacf9a45a69b04feb" target="_blank"><img src="http://logo.img.hubwiz.com/logo!5692ffcaacf9a45a69b04feb.png" alt="jQuery EasyUI"></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="http://www.hubwiz.com/course/5692ffcaacf9a45a69b04feb" target="_blank">jQuery EasyUI</a></h4>
+                    </div>
+                  </div>
+                
+                  <div href="http://www.hubwiz.com/course/56fa02b65fd193d76fcc6c34" class="media">
+                    <div class="media-left">
+                      <a href="http://www.hubwiz.com/course/56fa02b65fd193d76fcc6c34" target="_blank"><img src="http://logo.img.hubwiz.com/logo!56fa02b65fd193d76fcc6c34.png" alt="redux入门"></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><a href="http://www.hubwiz.com/course/56fa02b65fd193d76fcc6c34" target="_blank">redux入门</a></h4>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="bottom-content row">
+        <div class="website col-xs-12 col-sm-7 col-md-4 col-lg-4 col-md-offset-1">
+            <h5><img class="img-responsive" src="/images/logo_2.png" alt=""></h5>
+            <p style="text-indent: 2em;">
+                汇智网是一个学习最前沿编程技术的平台，互动式的学习和实时在线的练习，能让你迅速进入状态，快速掌握知识技能。
+            </p>
+            <ul  class="bdsharebuttonbox">
+                <!--<li><a data-cmd="qzone" class="weixin" title="微信" href="#"></a></li>-->
+                <li><a data-cmd="qzone" class="kongjian" title="QQ空间" href="#"></a></li>
+                <li><a data-cmd="tsina" class="xinlang" title="新浪微博" href="#"></a></li>
+                <li><a data-cmd="tqq" class="tengxun" title="腾讯微博" href="#"></a></li>
+                <li><a data-cmd="renren" class="renren" title="人人网" href="#"></a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-md-2 col-lg-2">
+            <h5>友情链接 <!--a class="pull-right" href="/friends" target="_blank">更多>>></a--></h5>
+            <ul>
+                <li><a href="http://www.phonegap100.com" target="_blank">phonegap中文网</a></li>
+                <li><a href="http://bubuko.com/" target="_blank">布布扣</a></li>
+                <li><a href="http://www.blockchainbrother.com/" target="_blank">区块链兄弟</a></li>
+                <li><a href="http://www.vue-js.com/" target="_blank">vue中文社区</a></li>
+                <li><a href="https://www.phaser-china.com" target="_blank">Phaser小站</a></li>
+                <li><a href="https://bitshuo.com/" target="_blank">区块链技术中文社区</a></li>
+                <li><a href="/friends" target="_blank">更多>>></a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-2 col-lg-2 footer-services">
+            <h5>服务与支持</h5>
+            <ul>
+                <li>
+                    <a target="_blank" href="http://sc.hubwiz.com/">
+                        <i class="glyphicon glyphicon-cloud"></i> 代码中心
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://xb.hubwiz.com/">
+                        <i class="glyphicon glyphicon-cloud"></i> 互动图书
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://cw.hubwiz.com/card/c">
+                        <i class="glyphicon glyphicon-cloud"></i> 课程卡片
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://man.hubwiz.com/">
+                        <i class="glyphicon glyphicon-cloud"></i> API手册
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://corpus.hubwiz.com/">
+                        <i class="glyphicon glyphicon-cloud"></i> 语料库集
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="/exchange">
+                        <i class="glyphicon glyphicon-cloud"></i> 技术问答
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://lab123.hubwiz.com/">
+                        <i class="glyphicon glyphicon-cloud"></i> 云端练习
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="code col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <h5>微信订阅号</h5>
+            <img class="img-responsive" src="/images/code.png" alt="">
+        </div>
+    </div>
+    <div class="copyright">
+        <!--&copy; 版权所有　Hubwiz,Inc. All Rights Reserved. 京ICP备13002042号-2-->
+	&copy; Hubwiz.com  &nbsp; 京ICP备13002042号-2
+    </div>
+</footer>
+
+  
+  <script src="/dist/course.min.js"></script>
+  
+  <!--script src="/dist/intro.js"></script-->
+  <script>
+    //百度分析
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?f1ba5b4a33d29d84db69f029b9ace483";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

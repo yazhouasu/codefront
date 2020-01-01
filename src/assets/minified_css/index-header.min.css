@@ -1,0 +1,180 @@
+a, a:hover {
+  text-decoration: none !important
+}
+
+header .main-nav, header .nav-head {
+  float: left
+}
+
+* {
+  font-size: 14px;
+  font-family: 'Microsoft Yahei', "Courier New", sans-serif
+}
+
+p {
+  margin: 10px 0
+}
+
+a {
+  color: #000
+}
+
+header .login-register .dd .icon, header .login-register .dd-menu li:hover, header .login-register .dd-menu li:hover a, header .main-nav li a:hover, header .otherLink .dd-menu li:hover a {
+  color: #5FB878
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  transform: translateZ(0)
+}
+
+header .nav-head a {
+  font-size: 2.2rem
+}
+
+header .main-nav li {
+  display: inline-block
+}
+
+header .main-nav li a {
+  font-size: 1.5rem;
+  padding: 0 40px
+}
+
+header .login-register .dd, header .otherLink .dd {
+  cursor: pointer;
+  display: inline-block;
+  position: relative
+}
+
+header .login-register .dd .el-icon-arrow-down, header .otherLink .dd .el-icon-arrow-down {
+  color: #5FB878;
+  transition: all .1s 0s linear;
+  font-size: .9rem
+}
+
+header .login-register .dd .badge-new {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #FF5722;
+  border-radius: 50%;
+  position: relative;
+  top: -5px
+}
+
+header .login-register .dd:hover .dd-menu, header .otherLink .dd:hover .dd-menu {
+  display: block
+}
+/*登录状态上下箭头指向翻转*/
+/*glyphicon-menu-down*/
+header .login-register .dd:hover .el-icon-arrow-down, header .otherLink .dd:hover .el-icon-arrow-down {
+  transform: rotate(180deg)
+}
+
+header .login-register .dd-menu, header .otherLink .dd-menu {
+  position: absolute;
+  border: 1px solid #5FB878;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  background-color: #fff;
+  display: none;
+  border-radius: 5px;
+  padding: 20px
+}
+
+header .login-register .dd-menu:before, header .otherLink .dd-menu:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(135deg);
+  border: 1px solid #5FB878;
+  border-top: none;
+  border-right: none;
+  top: -11px;
+  background-color: #fff
+}
+
+header .otherLink {
+  float: right
+}
+
+header .otherLink .dd-menu {
+  width: 250px
+}
+
+header .otherLink .dd-menu li {
+  transition: all .15s 0s linear;
+  line-height: 40px;
+  float: left;
+  width: 100px;
+  text-align: center;
+  margin: 8px 0;
+  cursor: pointer
+}
+
+header .login-register {
+  float: right;
+  padding: 0 35px
+}
+
+header .login-register .dd .icon {
+  width: 35px;
+  height: 35px
+}
+
+header .login-register .dd-menu {
+  width: 160px;
+  padding: 20px 0
+}
+
+header .login-register .dd-menu li {
+  line-height: 40px;
+  padding: 0 35px
+}
+
+header .login-register .dd-menu li.divider {
+  height: 1px;
+  background-color: #f0f0f0
+}
+
+header .login-register .dd-menu li.logout a {
+  color: #FF5722
+}
+
+header .search {
+  float: right;
+  position: relative
+}
+
+header .search .glyphicon {
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+header .search input {
+  line-height: 30px;
+  height: 30px;
+  width: 200px;
+  padding-left: 25px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid #d3d3d3;
+  margin-right: 20px;
+  font-size: 1.1rem
+}
+
+header .search input:focus {
+  border: 1px solid #87cefa
+}
